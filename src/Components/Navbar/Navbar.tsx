@@ -27,9 +27,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar px-0 mx-0 bg-base-300">
-        <div className="mx-auto ">
+    <div className="mt-2">
+      <div className="navbar px-0 mx-0 bg-base-100 border-b-2 border-gray-200">
+        <div className="navbar-start flex-1">
           <div className="dropdown">
             <div tabIndex={0} role="button" className=" mr-2 lg:hidden">
               <svg
@@ -54,15 +54,20 @@ const Navbar = () => {
               {navitems}
             </ul>
           </div>
-          <div className="bg-red-400">
-            <a className="text-lg font-semibold">Exclusive</a>
-          </div>
+          <a className="text-lg font-semibold ">Exclusive</a>
         </div>
         <div className="navbar-center  hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navitems}</ul>
         </div>
         <div className="navbar-end">
           <div className="flex gap-6 items-center">
+            <div>
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                className="input input-bordered w-full text-xs rounded-sm  max-w-xs"
+              />
+            </div>
             <IoIosHeartEmpty size={25} className="cursor-pointer" />
             <BsCart size={25} className="cursor-pointer" />
           </div>
