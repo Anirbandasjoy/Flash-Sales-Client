@@ -54,7 +54,9 @@ const Navbar = () => {
               {navitems}
             </ul>
           </div>
-          <a className="text-lg font-semibold ">Exclusive</a>
+          <Link to="/" className="text-lg font-semibold cursor-pointer">
+            Exclusive
+          </Link>
         </div>
         <div className="navbar-center  hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navitems}</ul>
