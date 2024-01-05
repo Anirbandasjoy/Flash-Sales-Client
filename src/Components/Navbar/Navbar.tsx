@@ -62,12 +62,12 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navitems}</ul>
         </div>
         <div className="navbar-end">
-          <div className="flex gap-6 items-center">
+          <div className="flex md:gap-6 gap-3 items-center">
             <div>
               <input
                 type="text"
                 placeholder="What are you looking for?"
-                className="input input-bordered w-full text-xs rounded-sm  max-w-xs"
+                className="input input-bordered w-full text-xs rounded-sm max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
               />
             </div>
             <IoIosHeartEmpty size={25} className="cursor-pointer" />
